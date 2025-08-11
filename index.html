@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <div class="search-box">
+            <input type="text" id="location-input" placeholder="Enter city name...">
+            <button id="search-btn">🔍</button>
+        </div>
+        
+        <div class="loading" id="loading"></div>
+        
+        <div class="error-message" id="error-message">
+            Location not found. Please try again!
+        </div>
+        
+        <div class="weather-info" id="weather-info">
+            <div class="weather-icon" id="weather-icon"></div>
+            <div class="temperature" id="temperature"></div>
+            <div class="location" id="location"></div>
+            <div class="condition" id="condition"></div>
+            
+            <div class="details">
+                <div>
+                    <span id="feels-like"></span>
+                    <small>Feels Like</small>
+                </div>
+                <div>
+                    <span id="humidity"></span>
+                    <small>Humidity</small>
+                </div>
+                <div>
+                    <span id="wind"></span>
+                    <small>Wind</small>
+                </div>
+            </div>
+            
+            <div class="last-updated" id="last-updated"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
